@@ -1,0 +1,339 @@
+@import "normalize";
+@import "slick";
+@import "skeleton";
+// @import "responsive-indicator";
+
+// $bk-color: lighten(black,20%);
+$bk-color: whitesmoke;
+$txt-color: gray;
+$link-color: darkred;
+
+.no-space {margin: 0; padding: 0;}
+.visible {background-color: silver !important;}
+.line-height { line-height: 1.25em; }
+.add-top { margin-top: 4em !important; }
+.black-letters {
+	h2 {
+		color: black;
+	}
+	li {
+		line-height: 2em;
+	}
+}
+
+// #Site Styles
+
+body {
+	@extend .no-space;
+	font-family: "Circular", "Source Code Pro";
+	font-weight: 100;
+	background-color: $bk-color;
+	color: $txt-color;
+	line-height: 1.45em;
+}
+h1, h2, h3, h4, h5, h5, h6 {
+	font-weight: 200;
+	color: black;
+	line-height: 1.25em;
+}
+a:link, a:visited {
+	color: $link-color;
+	text-decoration: none;
+	// @extend .underline;
+	&:hover {
+		// text-decoration: underline;
+	}
+}
+strong { font-weight: 500; }
+ul {
+	list-style: none;
+	padding: 0;
+}
+p {
+	margin-top: 0;
+	font-size: 18pt;
+	line-height: 1.5em;
+}
+hr {
+	border: 0;
+	height : 15px;
+	background: url('../img/bg/dots.gif') repeat-x;
+	margin : 1em 0;
+}
+img.scale-with-grid {
+	width: 100%;
+	height: auto;
+}
+figure {
+	@extend .no-space;
+	figcaption {
+		margin-bottom: 2em;
+	}
+}
+.full-width { width: 100%; }
+.text-center {text-align: center; }
+.caption { font-size: 75%; text-transform: uppercase; }
+
+.underline {
+    border-bottom: 3px solid rgba($link-color,0.25);
+    &:hover {
+    	border-bottom: 3px solid rgba($link-color,0.5);
+    }
+}
+
+// #Page Styles
+
+.logo {
+	position: fixed;
+	z-index: 10;
+	width: 130px;
+	top: 4em;
+	left: 1em;
+}
+// dropshadow on svg
+.shadow {
+	-webkit-filter: drop-shadow( 2px 2px 3px rgba(white,0.75) );
+	filter: drop-shadow( 2px 2px 3px rgba(white,0.75) ); /* Same syntax as box-shadow */
+}
+.header {
+	z-index: 9;
+	.active {@extend .underline; }
+	ul {
+		list-style: none;
+		text-align: center;
+		padding: 4rem 0;
+		font-size: 1em;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		li {
+			display: inline-block;
+			margin-right: 1em;
+			a:link, a:visited {
+				color: black;
+				-webkit-transition: all .6s;
+				-moz-transition: all .6s;
+				-o-transition: all .6s;
+				transition: all .6s;
+				&:hover {
+				@extend .underline;
+					color: gray;
+					-webkit-transition: all .6s;
+					-moz-transition: all .6s;
+					-o-transition: all .6s;
+					transition: all .6s;
+				}
+			}
+		}
+	}
+}
+.fixed {
+	@extend .no-space;
+	font-size: 0;
+	background-color: red;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 5;
+	ul {
+		@extend .no-space;
+	}
+	li {
+		font-size: 1rem;
+		display: inline-block;
+		padding: 0.5em 1em;
+		margin-right: -5px;
+		letter-spacing: 1px;
+		a, a:link {
+			-webkit-transition: all .6s;
+			-moz-transition: all .6s;
+			-o-transition: all .6s;
+			transition: all .6s;
+			color: rgba(white,0.7);
+			&:hover {
+				-webkit-transition: all .6s;
+				-moz-transition: all .6s;
+				-o-transition: all .6s;
+				transition: all .6s;
+				color: rgba(white,1);
+			}
+		}
+	}
+}
+.circle {
+	// background-color: red;
+	width: 10%;
+	margin: 0 auto;
+	margin-bottom: 1em;
+	&:hover {
+		-webkit-animation: rolly 2s infinite;
+	}
+}
+.emoji {
+	margin-top: 2em;
+	text-align: center;
+	img {
+		margin: 0 0.5em;
+	}
+}
+.signature {
+	text-align: center;
+	margin-top: 1rem !important;
+	opacity: 0.25;
+}
+.footer {
+	padding-bottom: 5em !important;
+	a:link, a:visited {
+		@extend .underline;
+	}
+	ul {
+
+		li {
+			display: inline-block;
+			margin-right: 1em;
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+	}
+}
+@-webkit-keyframes rolly {
+	0% 	 	{}
+	100%	{ -webkit-transform: rotate(360deg);}
+}
+
+// #Color
+
+.padding-top { padding: 4em 0; }
+@mixin full-width-light-color {
+	padding: 4em 0;
+	font-weight: 100;
+	line-height: 1.25em;
+	color: white;
+	letter-spacing: 1px;
+	h1 {
+		line-height: 1.25em;
+		color: inherit;
+	}
+}
+@mixin full-width-dark-color {
+	padding: 4em 0;
+	font-weight: 100;
+	line-height: 1.25em;
+	color: black;
+	letter-spacing: 1px;
+	h1 {
+		color: black;
+		line-height: 1.25em;
+	}
+}
+.dblue,
+.pink,
+.green,
+.dgrey,
+{
+	@include full-width-light-color;
+	a:link, a:visited {
+		color: orange;
+		@extend .underline;
+		border-bottom: 3px solid rgba(orange,0.25);
+		-webkit-transition: all .6s;
+		-moz-transition: all .6s;
+		-o-transition: all .6s;
+		transition: all .6s;
+		&:hover {
+			// color: darken(magenta,15%);
+			border-bottom: 0px solid rgba(magenta,0.25);
+		}
+	}
+}
+
+.orange,
+{
+	@include full-width-dark-color;
+	a:link, a:visited {
+		color: black;
+		border-bottom: 3px solid rgba(black,0.25);
+		-webkit-transition: all .6s;
+		-moz-transition: all .6s;
+		-o-transition: all .6s;
+		transition: all .6s;
+		&:hover {
+			-webkit-transition: all .6s;
+			-moz-transition: all .6s;
+			-o-transition: all .6s;
+			transition: all .6s;
+			border-bottom: 0px solid rgba(black,0.25);
+		}
+	}
+}
+
+.orange { background-color: orange; }
+.dblue {background-color: #1352A2; }
+.pink {background-color: darken(pink,20%); }
+.green {background-color: green; }
+.dgrey {background-color: lighten(black,20%); }
+
+
+// #Options
+.pattern-steel {
+	// TODO: add in background
+	background: url("img/bg/steel.png");
+}
+
+
+// #Media Queries
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		.logo {
+			position: relative;
+			width: 200px;
+			z-index: 10;
+			margin: 0 auto;
+			top: 1em;
+			left: 0;
+		}
+		.header {
+			ul {
+				padding: 1rem;
+				font-size: 1em;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+			}
+		}
+		h1 {font-size: 20pt; }
+		p { font-size: 12pt;}
+		.emoji {
+			img {
+				width: 20%;
+				margin: 0 0.5em;
+			}
+		}
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {}
+
+
+@font-face {
+  font-family: 'Circular';
+  src:
+	  url('fonts/circular-book.woff') format('woff'),
+	  url('fonts/circular-book.ttf') format('truetype');
+	  font-weight: normal;
+}
+@font-face {
+  font-family: 'Circular';
+  src: url('fonts/circular-medium.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('fonts/circular-medium.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+       font-weight: bold;
+}
