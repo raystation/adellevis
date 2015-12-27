@@ -13,7 +13,7 @@
 				<ul>
 					<li><a href="./">home</a>
 					<li><a href="news">news</a>
-					<li><a href="faces">faces</a>
+					<li><a href="people">people</a>
 					<li><a href="places">places</a>
 					<li><a href="https://www.etsy.com/shop/AdelleINK" target='_blank'>my etsy shop</a>
 					<li><a href="about">about</a>
