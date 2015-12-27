@@ -3,6 +3,7 @@ RewriteEngine On
 RewriteRule ^index$ index.php
 RewriteRule ^about$ about.php
 RewriteRule ^etsy$ etsy.php
+RewriteRule ^people$ people.php
 RewriteRule ^faces$ faces.php
 RewriteRule ^places$ places.php
 RewriteRule ^works3$ works3.php

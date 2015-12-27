@@ -48,7 +48,7 @@
 		<div class="sixteen columns">
 			<ul>
 				<li><a <? if ($filename=="news.php") { echo "class='active'"; } ?>href="news">news</a>
-				<li><a <? if ($filename=="faces.php") { echo "class='active'"; } ?>href="faces">faces</a>
+				<li><a <? if ($filename=="people.php") { echo "class='active'"; } ?>href="people">people</a>
 				<li><a <? if ($filename=="places.php") { echo "class='active'"; } ?>href="places">places</a>
 				<li><a <? if ($filename=="etsy.php") { echo "class='active'"; } ?>href="etsy">etsy</a>
 				<li><a <? if ($filename=="about.php") { echo "class='active'"; } ?>href="about">about</a>
