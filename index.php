@@ -4,10 +4,13 @@
 		<div class="container">
 			<div class="twelve columns offset-by-two">
 				<h1>
-					My name is Adelle Marcero, painter &amp; illustrator living in New Jersey. I make awesome portraits &amp; sell my art on&nbsp;Etsy.
+					Welcome! My name is Adelle Marcero, artist, illustrator and explorer in New Jersey. I make awesome portraits &amp; sell my art on&nbsp;Etsy.
 				</h1>
 				<p>
-					Happy New Year! An illustration of mine is going to be <a href='news'>in a book</a>! Check out my stuff in <a href="etsy">my Etsy shop</a> or get in touch at <a href="mailto:adellevis@outlook.com">adellevis@outlook.com</a> for custom art&nbsp;commissions!
+					I recently spent one amazing month in Paris <img src='img/emoji/eiffel-tower.png' style='height:1em;'>  exploring and <a href='people'>painting</a>. I was immediately drawn to Paris's people and fashion, so I decided to intercept people on the street that caught my eye and politely ask them for a photo to paint from. All said yes and I'll be forever grateful to the brave people of Paris for opening this creative door for me!
+				</p>
+				<p>
+					Check out my <a href='paris'>Street Fashion Paintings</a> and my <a href="etsy">Etsy shop</a> or get in touch at <a href="mailto:adellevis@outlook.com">adellevis@outlook.com</a> for custom art&nbsp;commissions!
 				</p>
 			</div>
 		</div>
